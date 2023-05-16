@@ -1,91 +1,94 @@
 /**
- * @name Discord+
- * @author PlusInsta
- * @authorId 309931975102300160
- * @authorLink https://plusinsta.xyz
- * @version 3.2.1
- * @description A sleek, customizable Discord theme.
- * @donate https://ko-fi.com/plusinsta
- * @website https://plusinsta.github.io/discord-plus
- * @source https://github.com/PlusInsta/discord-plus
- * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
- * @invite 2Jwh2nS
+ * @name         Reborn
+ * @description  Phoenix Theme Bundle: Transparent, fully customizable theme with multiple addons
+ * @author       MonsterDev
+ * @version      1.5
+ * @donate       https://goo.gl/9S8VGb
+ * @source       https://github.com/monstrousdev/themes/theme-files/Reborn.theme.css
+ * @invite       TeRQEPb
+ * @authorId     402272736665272320
+ */
+
+/* IMPORT CSS FROM GITHUB */
+@import "https://monstrousdev.github.io/themes/phoenix-bundle/reborn.css";
+/*
+===== IMPORTANT =====
+CHANGE DISCORDS THEME TO DARK THEME IN APPEARANCE SETTINGS FOR THIS THEME TO WORK!
+
+Registered: Black Box Theme
+
+===== CUSTOMIZABLE COLORS AND IMAGES =====
 */
-@import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
-
-/* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
-
-.theme-dark {
-/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
-   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
-  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
-
-/* Accent color, used to decorate the UI with colors. */
-  --dplus-accent-color-hue: 320;
-  --dplus-accent-color-saturation: 60%;
-  --dplus-accent-color-lightness: 31%;
-
-/* Foreground color: For things like text and icons. */
-  --dplus-foreground-color-hue-base: 210;
-  --dplus-foreground-color-hue-links: 197;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
-
-/* Background color: Covers the backdrop so the app is easier to read. */
-  --dplus-background-color-hue: 320;
-  --dplus-background-color-saturation-amount: 1;
-  --dplus-background-color-lightness-amount: 1;
-  --dplus-background-color-alpha: 0.8;
-}
-
-/* If you use light theme, you can give it unique settings that are separate from dark theme. */
-.theme-light {
-  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
-  
-  --dplus-accent-color-hue: 320;
-  --dplus-accent-color-saturation: 60%;
-  --dplus-accent-color-lightness: 31%;
-  
-  --dplus-foreground-color-hue-base: 210;
-  --dplus-foreground-color-hue-links: 197;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
-
-  --dplus-background-color-hue: 320;
-  --dplus-background-color-saturation-amount: 1;
-  --dplus-background-color-lightness-amount: 1;
-  --dplus-background-color-alpha: 0.8;
-}
 
 :root {
-/* Fonts */
-/* You can use any installed font on your device. */
-  --dplus-font-ui: 'Poppins';
-  --dplus-font-body: 'Roboto';
-  --dplus-font-header: 'Righteous';
-
-/* Round corner sizes, measured in pixel radius.
-Set avatar/server radius to 50% to make them circular.
-   UI radius must be in pixels, otherwise things break. */
-  --dplus-radius-ui: 10px;
-  --dplus-radius-avatar: 20%;
-  --dplus-radius-server: 20%;
-
-/* This decides how much breathing room there should be between things like buttons and content. */
-  --dplus-spacing-ui: 10px;
-
-/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
-   --dplus-spacing-app: 10px;
-
-/* Size of user and server icons */
---dplus-icon-avatar-chat: 64px;
---dplus-icon-avatar-list: 32px;
---dplus-icon-avatar-profile: 80px;
-
---dplus-icon-server-sidebar: 48px;
---dplus-icon-server-list: 32px;
-
-/* The Home icon on the top left */
---dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg);
---dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
+  --roundness: 50px; /* edit roundness of icons from 0px to 50px */
+ --main-color: #007dbd; /* Main Color */     
+  --hover-color: #03679b; /* Hover Color */
+  --home-color: #eee; /* Change home icon color */
+  --home-size: 24px; /* size of the home icon */
+  --shadow: rgba(0,0,0,.4); /* change to darken lighten, or set to transparent */
+ --background-image: url(https://s-media-cache-ak0.pinimg.com/originals/60/c4/bb/60c4bb55215c989b15b0fe144c73cf82.jpg); /* change background */
+  --background-blur: 0px; /* Main Background Blur */
+--popup-background: url(https://s-media-cache-ak0.pinimg.com/originals/60/c4/bb/60c4bb55215c989b15b0fe144c73cf82.jpg);  /* Background for popups and modals */
+  --background-darkness: 0.75; /* change the darkness of your background. 1 makes it completely black, 0 makes it like the original image */
 }
+
+
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------
+===== CREDITS =====
+URI
+BEARDDESIGN
+ZERTHOX
+THESE PEOPLE HAVE HELPED CREATE THIS THEME IN ONE WAY OR THE OTHER.
+===== TROUBLESHOOTING =====
+IF YOU NEED ANY HELP GO TO https://discord.gg/TeRQEPb
+---------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/* Server Chat and Voice Channels */
+.container-1NXEtd {
+  background-color: transparent !important;
+}
+
+/* Chat background */
+.chatContent-3KubbW {
+    background-color: transparent !important;
+}
+
+/* Direct Messages */
+.thin-31rlnD {
+    background-color: transparent !important
+}
+
+/* Chat/Writing Bubble */
+.scrollableContainer-15eg7h {
+    background-color: transparent !important
+}
+
+/* Activity Pannel */
+.activityPanel-9icbyU {
+  background-color: transparent !important;
+}
+
+/* Stream Preview */
+.streamPreview-I7itZ6 {
+  background-color: #101010 !important;
+}
+
+/*Server Role/People */
+.layout-1qmrhw{
+  background-color: #101010 !important;
+}
+
+/* Chat Name Activity */
+.popoutHeaderContainer-26vKmr {
+  background-color: #101010 !important;
+}
+
+/* Chat Activity Background Colour */
+.activity-1DK9Xa {
+  background-color: #101010 !important;
+}
+.translate-PeW1wK {
+  background-color: #101010 !important;
+} 
